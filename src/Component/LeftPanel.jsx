@@ -61,7 +61,7 @@ function LeftPanel() {
           <div className="upgrade">
             <div className="upgrade-cont">
                 <HiOutlineArrowNarrowUp className="upgrade-icon"/>
-                <h5>Upgrade to Pro for more feature</h5>
+                <h5 className="upgrade-text">Upgrade to Pro for more feature</h5>
                 <h5 className="upgrade-button">Upgrade</h5>
             </div>
           </div>
