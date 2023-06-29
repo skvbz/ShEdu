@@ -167,7 +167,7 @@
 }
 
 .centerp2 {
-  width: 70%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,6 +239,10 @@
   width: auto;
 }
 
+.hsimage-cont img:hover {
+  transform: scale(0.8);
+}
+
 .hsbutton {
   width: 30%;
   font-size: 14px;
@@ -300,7 +304,7 @@
 }
 
 .doc-icon {
-  font-size: 42px;
+  font-size: 44px;
   color: rgba(143, 0, 255, 1);
   border-radius: 8px;
   background: #F3E4FF;
@@ -316,7 +320,7 @@
 
 .doc-record h5 {
   color: #272835;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -324,7 +328,7 @@
 
 .doc-record p {
   color: #9E9E9E;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -332,7 +336,7 @@
 
 .doc-status p {
   color: #272835;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -373,7 +377,7 @@
 
 .prog-tab {
   width: 100%;
-  padding: 5px 10px 2px 10px;
+  padding: 5px 00px 2px 10px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -385,7 +389,7 @@
   background: #EAEEFD;
   padding: 15px;
   color: #272835;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -393,6 +397,7 @@
 }
 
 .prog-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,15 +405,74 @@
 }
 
 .prog-info h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
+.twin-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
 .prog-course {
-  font-size: 10px;
+  width: 60%;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
+}
+
+.progress-bar {
+  width: 30%; /* Adjust the width as needed */
+  height: 10px;
+  border: 1px solid #ccc; /* Optional border */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.progress-bar-fill {
+  width: 50%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: rgba(255, 178, 0, 1); /* Adjust the color for the filled portion */
+}
+
+.progress-bar-remaining {
+  width: 50%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: rgba(255, 245, 204, 1); /* Adjust the color for the remaining portion */
+}
+
+.progress-bar-fill2 {
+  width: 70%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: #00ff00; /* Adjust the color for the filled portion */
+}
+
+.progress-bar-remaining2 {
+  width: 30%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: rgba(209, 255, 219, 1); /* Adjust the color for the remaining portion */
+}
+
+.progress-bar-fill3 {
+  width: 30%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: rgba(255, 74, 74, 1); /* Adjust the color for the filled portion */
+}
+
+.progress-bar-remaining3 {
+  width: 70%; /* Adjust the percentage as needed */
+  height: 100%;
+  float: left;
+  background-color: rgba(255, 215, 215, 1); /* Adjust the color for the remaining portion */
 }

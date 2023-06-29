@@ -34,7 +34,7 @@ function CenterPage() {
                 </div>
                 <div className="doc-tab">
                   <div className="doc-info">
-                    <LuClipboardList className="doc-icon"/>
+                    <LuClipboardList className="doc-icon" />
                     <div className="doc-record">
                       <h5>Submisson NLP Programming</h5>
                       <p>04 Jan, 09:20AM</p>
@@ -46,7 +46,7 @@ function CenterPage() {
                 </div>
                 <div className="doc-tab">
                   <div className="doc-info">
-                    <LuClipboardList className="doc-icon"/>
+                    <LuClipboardList className="doc-icon" />
                     <div className="doc-record">
                       <h5>Submisson NLP Programming</h5>
                       <p>04 Jan, 09:20AM</p>
@@ -63,35 +63,44 @@ function CenterPage() {
                 </div>
                 <div className="prog-box">
                   <div className="prog-icon">
-                    <BsThreeDots className="dot"/>
+                    <BsThreeDots className="dot" />
                   </div>
                   <div className="prog-tab">
                     <div className="tab-icon">UI</div>
                     <div className="prog-info">
                       <h5>Part Typography</h5>
-                      <div>
+                      <div className="twin-bar">
                         <p className="prog-course">User Interface</p>
-                        <p></p>
+                        <div className="progress-bar">
+                          <div className="progress-bar-fill"></div>
+                          <div className="progress-bar-remaining"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="prog-tab">
-                    <div className="tab-icon">UI</div>
+                    <div className="tab-icon">DS</div>
                     <div className="prog-info">
-                      <h5>Part Typography</h5>
-                      <div>
-                        <p className="prog-course">User Interface</p>
-                        <p></p>
+                      <h5>Part Data Structure</h5>
+                      <div className="twin-bar">
+                        <p className="prog-course">Computer Science</p>
+                        <div className="progress-bar">
+                          <div className="progress-bar-fill2"></div>
+                          <div className="progress-bar-remaining2"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="prog-tab">
-                    <div className="tab-icon">UI</div>
+                    <div className="tab-icon">AS</div>
                     <div className="prog-info">
-                      <h5>Part Typography</h5>
-                      <div>
-                        <p className="prog-course">User Interface</p>
-                        <p></p>
+                      <h5>Part Architecture</h5>
+                      <div className="twin-bar">
+                        <p className="prog-course">Engineering</p>
+                        <div className="progress-bar">
+                          <div className="progress-bar-fill3"></div>
+                          <div className="progress-bar-remaining3"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
