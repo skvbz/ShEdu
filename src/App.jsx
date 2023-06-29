@@ -1,5 +1,6 @@
 import CenterPage from './Component/CenterPage'
 import LeftPanel from './Component/LeftPanel'
+import UserPanel from './Component/UserPanel'
 import './index.css'
 
 
@@ -9,6 +10,7 @@ function App() {
     <div className="dashboard-page">
     <LeftPanel/>
     <CenterPage/>
+    <UserPanel/>
     </div>
     </>
   )

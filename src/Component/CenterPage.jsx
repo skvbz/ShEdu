@@ -20,7 +20,7 @@ function CenterPage() {
                   branding corporation or a regular down at heel tatty magazine
                   publisher needs to fill holes in the workforce.
                 </p>
-                <p className="hsbutton">Get started</p>
+                <button className="hsbutton">Get started</button>
               </div>
               <div className="hsimage-cont">
                 <img src={heroimg} alt="" />

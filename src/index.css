@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 /* Dashboard */
 .dashboard-page {
@@ -13,7 +22,7 @@
 
 /* Left Panel */
 .left-p1 {
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,8 +137,8 @@
 }
 
 .upgrade-text {
-  width: 70%;
-  font-size: 18px;
+  width: 100%;
+  font-size: 16px;
 }
 
 .upgrade-icon {
@@ -158,7 +167,7 @@
 
 /* Center Page */
 .centerp1 {
-  width: 75%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +176,7 @@
 }
 
 .centerp2 {
-  width: 75%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,7 +226,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 20px;
+  padding: 20px 0px 0px 0px;
 }
 
 .hstext-cont h4 {
@@ -226,6 +235,7 @@
 }
 
 .hstext-cont p {
+  width: 100%;
   font-size: 18px;
   line-height: 20px;
 }
@@ -244,7 +254,7 @@
 }
 
 .hsbutton {
-  width: 30%;
+  width: 40%;
   font-size: 14px;
   padding: 10px 20px;
   display: flex;
@@ -381,7 +391,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 .tab-icon {
@@ -412,6 +422,7 @@
 }
 
 .twin-bar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -428,51 +439,198 @@
 }
 
 .progress-bar {
-  width: 30%; /* Adjust the width as needed */
+  width: 30%;
+  /* Adjust the width as needed */
   height: 10px;
-  border: 1px solid #ccc; /* Optional border */
+  border: 1px solid #ccc;
+  /* Optional border */
   overflow: hidden;
   border-radius: 10px;
 }
 
 .progress-bar-fill {
-  width: 50%; /* Adjust the percentage as needed */
+  width: 50%;
+  /* Adjust the percentage as needed */
   height: 100%;
   float: left;
-  background-color: rgba(255, 178, 0, 1); /* Adjust the color for the filled portion */
+  background-color: rgba(255, 178, 0, 1);
+  /* Adjust the color for the filled portion */
 }
 
 .progress-bar-remaining {
-  width: 50%; /* Adjust the percentage as needed */
+  width: 50%;
+  /* Adjust the percentage as needed */
   height: 100%;
   float: left;
-  background-color: rgba(255, 245, 204, 1); /* Adjust the color for the remaining portion */
+  background-color: rgba(255, 245, 204, 1);
+  /* Adjust the color for the remaining portion */
 }
 
 .progress-bar-fill2 {
-  width: 70%; 
+  width: 70%;
   height: 100%;
   float: left;
   background-color: #00ff00;
 }
 
 .progress-bar-remaining2 {
-  width: 30%; 
+  width: 30%;
   height: 100%;
   float: left;
   background-color: rgba(209, 255, 219, 1);
 }
 
 .progress-bar-fill3 {
-  width: 40%; 
+  width: 40%;
   height: 100%;
   float: left;
   background-color: rgba(255, 74, 74, 1);
 }
 
 .progress-bar-remaining3 {
-  width: 60%; 
+  width: 60%;
   height: 100%;
   float: left;
-  background-color: rgba(255, 215, 215, 1); /* Adjust the color for the remaining portion */
+  background-color: rgba(255, 215, 215, 1);
+  /* Adjust the color for the remaining portion */
+}
+
+
+/* USER PANEL */
+.userp1 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(249, 248, 249, 1);
+}
+
+.userp2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userp3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.counter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 100px 0;
+}
+
+.counter-icon, .recent-icon {
+  font-size: 20px;
+}
+
+.user-pic {
+  background-color: rgb(177, 173, 173);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.counter-sect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.upcoming, .recent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upcoming-text, .recent-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upcoming-info, .recent-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.upcoming-bell {
+  background-color: #FFE4C2;
+  border-radius: 8px;
+}
+
+.ubell-icon {
+  font-size: 44px;
+  color: rgba(255, 173, 71, 1);
+  padding: 10px;
+}
+
+.upcoming-record, .recent-record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.upcoming-record h5, .recent-record h5 {
+  color: #272835;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.upcoming-time p, .recent-record p {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.upcoming-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.due {
+  color: #FFAD47;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 10px  ;
+}
+
+.out-icon {
+  font-size: 44px;
+  color: rgba(0, 142, 19, 1);
+  border-radius: 8px;
+  background: #D4FFDA;
+  padding: 10px;
+}
+
+.mic-icon {
+  font-size: 44px;
+  color: rgba(0, 138, 216, 1);
+  border-radius: 8px;
+  background: #E4FAFF;
+  padding: 10px;
 }
