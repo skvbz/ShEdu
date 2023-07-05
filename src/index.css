@@ -544,7 +544,12 @@
   padding: 20px 0px 100px 0;
 }
 
-.counter-icon, .recent-icon {
+.counter-icon,
+.recent-icon {
+  font-size: 20px;
+}
+
+.counter-settingicon {
   font-size: 20px;
 }
 
@@ -561,26 +566,39 @@
   gap: 40px;
 }
 
-.upcoming, .recent, .latest {
+.upcoming,
+.recent,
+.latest {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.upcoming-text, .recent-text, .latest-text {
+.upcoming-text,
+.recent-text,
+.latest-text {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.upcoming-info, .recent-info {
+.upcoming-info,
+.recent-info {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 10px;
+}
+
+.rdoc-icon {
+  font-size: 50px;
+  color: rgba(143, 0, 255, 1);
+  border-radius: 8px;
+  background: #F3E4FF;
+  padding: 2px;
 }
 
 .upcoming-bell {
@@ -594,14 +612,16 @@
   padding: 10px;
 }
 
-.upcoming-record, .recent-record {
+.upcoming-record,
+.recent-record {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
 
-.upcoming-record h5, .recent-record h5 {
+.upcoming-record h5,
+.recent-record h5 {
   color: #272835;
   font-size: 12px;
   font-style: normal;
@@ -611,7 +631,8 @@
   white-space: nowrap;
 }
 
-.upcoming-time p, .recent-record p {
+.upcoming-time p,
+.recent-record p {
   color: #9E9E9E;
   font-size: 14px;
   font-style: normal;
@@ -631,7 +652,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding-left: 10px  ;
+  padding-left: 10px;
 }
 
 .out-icon {
@@ -650,7 +671,219 @@
   padding: 10px;
 }
 
-/* Latest */
-.latest {
+.users-txtmsg {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+
+.usertxt-icon {
+  background-color: rgb(177, 173, 173);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1234px) {
+  .upcoming-time p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .counter {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .rdoc-icon,
+  .out-icon,
+  .mic-icon,
+  .ubell-icon {
+    display: none;
+  }
+
+  .centerp1 {
+    padding: 10px 0;
+  }
+
+  .hstext-cont {
+    padding: 20px 0px 5px 0px;
+  }
+
+  .hstext-cont p {
+    width: 90%;
+  }
+
+  .hsimage-cont {
+    margin: auto 150px auto -70px;
+  }
+
+  .twin-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    gap: 5px;
+  }
+
+  .prog-info {
+    gap: 5px;
+  }
+
+  .prog-box {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .prog-tab {
+    gap: 10px;
+  }
+}
+
+@media (max-width:1111px) {
+
+  .counter-icon,
+  .recent-icon {
+    font-size: 18px;
+  }
+
+  .hstext-cont p {
+    width: 100%;
+  }
+
+  .counter-settingicon {
+    font-size: 24px;
+  }
+
+  .userp2 {
+    width: 90%;
+  }
+
+  .doc-info {
+    gap: 10px;
+  }
+
+  .hsimage-cont {
+    margin: auto 160px auto -70px;
+  }
+}
+
+@media (max-width: 1037px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .menu:hover {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .prog-info h5 {
+    font-size: 13px;
+  }
+
+  .doc-record h5 {
+    font-size: 11px;
+  }
+
+  .doc-info {
+    gap: 5px;
+  }
+
+  .upgrade-text,
+  .upgrade-button {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 986px) {
+  .counter {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .counter-settingicon {
+    font-size: 95px;
+  }
+
+  .hstext-cont p {
+    width: 95%;
+  }
+
+  .hsimage-cont {
+    margin: auto 177px auto -70px;
+  }
+
+  .prog-box {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 969px) {
+  .prog-icon {
+    width: 100%;
+    padding: 5px 10px 0px 0px;
+  }
+
+  .welcome-textbox h1 {
+    font-size: 24px;
+  }
+
+  .hstext-cont h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width:976px) {
+  .hsbutton {
+    width: 50%;
+  }
+
+  .hstext-cont p {
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 944px) {
+  .doc-prog {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .doc,
+  .prog {
+    width: 100%;
+  }
+
+  .twin-bar {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .doc-record h5,
+  .doc-record p {
+    font-size: 16px;
+  }
+
+  .doc-info {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 925px) {
+
+  .upcoming-record h5,
+  .recent-record h5 {
+    font-size: 10px;
+  }
 }

@@ -16,7 +16,7 @@ function UserPanel() {
               <div className="bell">
                 <AiOutlineBell className="counter-icon" />
               </div>
-              <HiOutlineCog className="counter-icon" />
+              <HiOutlineCog className="counter-settingicon" />
               <div className="user-pic">
                 <AiOutlineUser className="counter-icon" />
               </div>
@@ -60,7 +60,7 @@ function UserPanel() {
                   <BsThreeDots className="recent-icon" />
                 </div>
                 <div className="recent-info">
-                    <LuClipboardList className="doc-icon" />
+                    <LuClipboardList className="rdoc-icon" />
                     <div className="recent-record">
                       <h5>Submisson NLP Programming</h5>
                       <p>04 Jan, 09:20AM</p>
@@ -81,14 +81,14 @@ function UserPanel() {
                     </div>
                 </div>
                 <div className="recent-info">
-                    <LuClipboardList className="doc-icon" />
+                    <LuClipboardList className="rdoc-icon" />
                     <div className="recent-record">
                       <h5>Submisson NLP Programming</h5>
                       <p>04 Jan, 09:20AM</p>
                     </div>
                 </div>
                 <div className="recent-info">
-                    <LuClipboardList className="doc-icon" />
+                    <LuClipboardList className="rdoc-icon" />
                     <div className="recent-record">
                       <h5>Submisson NLP Programming</h5>
                       <p>04 Jan, 09:20AM</p>
@@ -98,6 +98,23 @@ function UserPanel() {
               <div className="latest">
                 <div className="latest-text">
                     <h4>Latest Message</h4>
+                </div>
+                <div className="users-txtmsg">
+                    <div className="usertxt-icon">
+                        <h4>AK</h4>
+                    </div>
+                    <div className="usertxt-icon">
+                        <h4>BK</h4>
+                    </div>
+                    <div className="usertxt-icon">
+                        <h4>CK</h4>
+                    </div>
+                    <div className="usertxt-icon">
+                        <h4>DK</h4>
+                    </div>
+                    <div className="usertxt-icon">
+                        <h4>FK</h4>
+                    </div>
                 </div>
               </div>
             </div>
