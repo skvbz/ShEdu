@@ -1,4 +1,5 @@
 import heroimg from "../images/Humaaans Spacehero-sect.png";
+import graph from "../images/GraphGraph.png";
 import { LuClipboardList } from "react-icons/lu";
 import { BsThreeDots } from "react-icons/bs";
 
@@ -26,7 +27,9 @@ function CenterPage() {
                 <img src={heroimg} alt="" />
               </div>
             </div>
-            {/* graph div */}
+            <div className="bar-chart">
+              <img src={graph} alt="" />
+            </div>
             <div className="doc-prog">
               <div className="doc">
                 <div className="doc-text">
