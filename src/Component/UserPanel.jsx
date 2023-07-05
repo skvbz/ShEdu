@@ -95,7 +95,11 @@ function UserPanel() {
                     </div>
                 </div>
               </div>
-              <div className="latest"></div>
+              <div className="latest">
+                <div className="latest-text">
+                    <h4>Latest Message</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>

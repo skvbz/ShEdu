@@ -18,6 +18,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 /* Left Panel */
@@ -28,6 +29,7 @@
   justify-content: center;
   align-items: center;
   background-color: #002979;
+  overflow: hidden;
 }
 
 .left-p2 {
@@ -559,14 +561,14 @@
   gap: 40px;
 }
 
-.upcoming, .recent {
+.upcoming, .recent, .latest {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.upcoming-text, .recent-text {
+.upcoming-text, .recent-text, .latest-text {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -646,4 +648,9 @@
   border-radius: 8px;
   background: #E4FAFF;
   padding: 10px;
+}
+
+/* Latest */
+.latest {
+  width: 100%;
 }
